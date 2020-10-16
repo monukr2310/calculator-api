@@ -18,6 +18,31 @@ app.get('/', (req,res)=>{
     return res.status(200).message("Hello world");
 });
 
+app.get("/add",function(req,res){
+    // res.sendFile(__dirname+"/index.html");
+  ///  res.send("<h1>you are on the calculator page now</h1>");
+     res.sendFile(__dirname+"/index.html");
+
+});             
+
+    app.get("/sub",function(req,res){
+             res.sendFile(__dirname+"/index.html");
+    });
+
+   app.get("/multiply",function(req,res){
+          res.sendFile(__dirname+"/index.html");
+   });
+
+   app.get("/divide",function(req,res){
+         res.sendFile(__dirname+"/index.html");
+   });
+
+
+
+
+
+
+
 app.post("/add",function(req,res){
             
     // console.log(req.body);
@@ -108,11 +133,11 @@ app.post("/calculator",function(req,res){
              'message': "Cannot divide by Zero"
          })
      }
-     const div = num1 / num2;
+     const divi = num1 / num2;
      return res.status(200).json({
          status:"success",
          'message': 'The divison of given numbers',
-         'div': div
+         'div': divi
      })
 }); 
 
