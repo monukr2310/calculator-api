@@ -18,24 +18,7 @@ app.get('/', (req,res)=>{
     return res.status(200).message("Hello world");
 });
 
-app.get("/add",function(req,res){
-    // res.sendFile(__dirname+"/index.html");
-  ///  res.send("<h1>you are on the calculator page now</h1>");
-     res.sendFile(__dirname+"/index.html");
 
-});             
-
-    app.get("/sub",function(req,res){
-             res.sendFile(__dirname+"/index.html");
-    });
-
-   app.get("/multiply",function(req,res){
-          res.sendFile(__dirname+"/index.html");
-   });
-
-   app.get("/divide",function(req,res){
-         res.sendFile(__dirname+"/index.html");
-   });
 
 
 
